@@ -5,8 +5,366 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="container">
+        <section class="page-header-top">
+          <div class="logo">
+            Техномарт
+          </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+          <div class="search">
+            Поиск:
+          </div>
 
+          <div class="bookmarks">
+            Корзина:
+          </div>
+
+          <div class="checkout">
+            Оформить заказ
+          </div>
+        </section>
+        <!-- [Вопрос] Как лучше дивы вложенные в секции или секции в секции? Как правильно?-->
+        <section class="page-header-middle">
+          <div class="site-description">
+            <h1>Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+            </h1>
+          </div>
+
+          <div class="contacts">
+            <a class="btn btn-contacts" href="#">+7(812)555-05-55</a>
+            г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+          </div>
+
+          <div class="user-block">
+            <a class="btn btn-user-block" href="#">Войти</a>
+            <a class="btn btn-user-block" href="#">Регистрация</a>
+          </div>
+        </section>
+
+        <section class="page-header-bottom">
+          <nav class="main-menu">
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="features">
+        <div class="features-item">
+          <p class="label-new">New<p>
+          <p>Материалы</p>
+          <a class="btn btn-features" href="#">На любой вкус</a>
+        </div>
+
+        <div class="features-item">
+          <p>Инструмент</p>
+          <a class="btn btn-features" href="#">На все случаи</a>
+        </div>
+
+        <div class="features-item">
+          <p>Техника</p>
+          <a class="btn btn-features" href="#">Для стройки</a>
+        </div>
+
+        <div class="features-item">
+          <p>Скидки 50%</p>
+          <a class="btn btn-features" href="#">На 350 товаров</a>
+        </div>
+
+        <div class="features-item">
+          <p>Доставка</p>
+          <a class="btn btn-features" href="#">Бесплатно</a>
+        </div>
+      </section>
+
+      <section class="slider">
+        <!-- [В] Стрелки слайдера - кнопки или ссылки?? Почему?
+        Как вообще слайдер размечать? -->
+        <button class="btn btn-slider-prew"></button>
+        <button class="btn btn-slider-next"></button>
+
+        <div class="slide-content">
+          <h2>Перфораторы</h2>
+          <p>Настоящие мужские игрушки</p>
+          <a class="btn btn-more-info" href="#">Открыть каталог</a>
+        </div>
+      </section>
+
+      <article class="mini-catalog-article">
+        <header class="mini-catalog-header">
+          <!-- [] Чтоб разнести по сторонам, обернуть в дивы-контейнеры? -->
+          <h2>Популярные товары</h2>
+          <a class="btn btn-more-info" href="#">Все популярные товары</a>
+        </header>
+
+          <article class="catalog-item">
+            <figure class="product-img">
+              <!-- [Исправить] Размеры и адрес рисунка-->
+              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <figcaption>
+                Перфоратор BOSCH<br>
+                BFG 9000
+              </figcaption>
+            </figure>
+            <p class="product-old-price">32500 р.</p>
+            <p class="product-new-price">25500 р.</p>
+          </article>
+
+          <article class="catalog-item">
+            <figure class="product-img">
+              <!-- [Исправить] Размеры и адрес рисунка-->
+              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <figcaption>
+                Перфоратор BOSCH<br>
+                BFG 3000
+              </figcaption>
+            </figure>
+            <p class="product-old-price">22500 р.</p>
+            <p class="product-new-price">15500 р.</p>
+          </article>
+
+          <article class="catalog-item">
+            <figure class="product-img">
+              <!-- [Исправить] Размеры и адрес рисунка-->
+              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <figcaption>
+                Перфоратор BOSCH<br>
+                BFG 6000
+              </figcaption>
+            </figure>
+            <p class="product-old-price">30500 р.</p>
+            <p class="product-new-price">25500 р.</p>
+          </article>
+
+          <article class="catalog-item">
+            <p class="label-new">New<p>
+            <figure class="product-img">
+              <!-- [Исправить] Размеры и адрес рисунка-->
+              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <figcaption>
+                Перфоратор BOSCH<br>
+                BFG 2000
+              </figcaption>
+            </figure>
+            <p class="product-new-price">12500 р.</p>
+          </article>
+      </article>
+
+      <article class="mini-catalog-article">
+        <header class="mini-catalog-header">
+          <!-- [] Чтоб разнести по сторонам, обернуть в дивы-контейнеры? -->
+          <h2>Популярные производители:</h2>
+          <a class="btn btn-more-info" href="#">Все производители</a>
+        </header>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="bosch">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="thakita">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="dewalt">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="интерскол">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="hitachi">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="lg">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="aeg">
+          </figure>
+        </article>
+
+        <article class="catalog-item">
+          <figure class="product-logo-img">
+            <img src="http://placehold.it/150x100" width="100" height="30" alt="metabo">
+          </figure>
+        </article>
+      </article>
+
+      <article class="services">
+        <section class="services-desc">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </section>
+
+        <article>
+          <aside class="services-navigation">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Кредит</a>
+          </aside>
+          <!-- [Вопрсо] Как верстать скрытые слои поведения: слайде, активный и остальные
+          пункты меню -->
+          <section class="services-item">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
+          </section>
+        </article>
+      </article>
+
+      <article class="about-us">
+        <article class="info">
+          <h2>Компания "Техномарт"</h2>
+
+          <p>Настоящий мужской шоппинг насинается здесь! Огромный выбор товаров для ремонта
+          и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:</p>
+
+          <ul class="list-transport-companies">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a class="btn btn-more-info" href="#">Подробнее о компании</a>
+        </article>
+
+        <article class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами,<br>
+          заехав в наш офис:</p>
+           <!-- [Исправить] адрес, размеры картнки. И картинка ли или фон или как?-->
+          <div class="map">
+            <img src="http://placehold.it/150x100" width="200" height="100" alt="Большая Конюшенная ул., 19">
+          </div>
+
+          <a class="btn btn-more-info" href="#">Заблудились? Напишите нам!</a>
+        </article>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <section class="page-footer-top">
+          <div class="logo">
+            Техномарт
+          </div>
+
+          <nav class="footer-menu">
+            <ul>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="page-footer-middle">
+          <div class="footer-contacts">
+            г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+            +7(812)555-05-55
+          </div>
+
+          <nav class="footer-catalog-navigation">
+            <ul>
+              <li>
+                <a href="#">Материалы</a>
+              </li>
+              <li>
+                <a href="#">Техника</a>
+              </li>
+              <li>
+                <a href="#">Инструмент</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="page-footer-bottom">
+          <section class="copyrights">
+            2010-2017 Компания "Техномарт"<br>
+            Все права защищены
+          </section>
+
+          <section class="social">
+            <a class="btn-social btn-social-vk">Вконтакте</a>
+            <a class="btn-social btn-social-fb">Фейсбук</a>
+            <a class="btn-social btn-social-inst">Инстаграм</a>
+          </section>
+
+          <section class="feedback">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </section>
+
+          <section class="feedback">
+            Разработано-
+            <a href="htmlacademy.ru">htmlacademy.ru</a>
+          </section>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
