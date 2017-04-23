@@ -17,14 +17,19 @@
           </div>
 
           <div class="bookmarks">
-            Корзина:
+            Закладки: 0
+          </div>
+
+          <div class="cart">
+            Корзина: 0
           </div>
 
           <div class="checkout">
             Оформить заказ
           </div>
         </section>
-        <!-- [Вопрос] Как лучше дивы вложенные в секции или секции в секции? Как правильно?-->
+        <!-- [Вопрос] Как лучше дивы вложенные в секции или секции в секции?
+        Как правильно?-->
         <section class="page-header-middle">
           <div class="site-description">
             <h1>Интернет-магазин<br>
@@ -34,8 +39,8 @@
           </div>
 
           <div class="contacts">
-            <a class="btn btn-contacts" href="#">+7(812)555-05-55</a>
-            г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
+            <span class="tel">+7(812)555-05-55</span>
+            <span class="address">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
           </div>
 
           <div class="user-block">
@@ -48,7 +53,7 @@
           <nav class="main-menu">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a>Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
@@ -77,7 +82,7 @@
     <main class="container">
       <section class="features">
         <div class="features-item">
-          <p class="label-new">New<p>
+          <div class="label-new">New</div>
           <p>Материалы</p>
           <a class="btn btn-features" href="#">На любой вкус</a>
         </div>
@@ -104,133 +109,163 @@
       </section>
 
       <section class="slider">
-        <!-- [В] Стрелки слайдера - кнопки или ссылки?? Почему?
+        <!-- [В] Стрелки слайдера - кнопки или ссылки?? Почему кнопки в примере барбершопа?
         Как вообще слайдер размечать? -->
         <button class="btn btn-slider-prew"></button>
         <button class="btn btn-slider-next"></button>
 
         <div class="slide-content">
-          <h2>Перфораторы</h2>
+          <span>Перфораторы</span>
           <p>Настоящие мужские игрушки</p>
+          <a class="btn btn-more-info" href="#">Открыть каталог</a>
+        </div>
+
+        <div class="slide-content">
+          <span>Дрели</span>
+          <p>Соседям на радость!</p>
           <a class="btn btn-more-info" href="#">Открыть каталог</a>
         </div>
       </section>
 
-      <article class="mini-catalog-article">
-        <header class="mini-catalog-header">
+      <section class="mini-catalog">
+        <div class="mini-catalog-header">
           <!-- [] Чтоб разнести по сторонам, обернуть в дивы-контейнеры? -->
           <h2>Популярные товары</h2>
           <a class="btn btn-more-info" href="#">Все популярные товары</a>
-        </header>
+        </div>
 
-          <article class="catalog-item">
-            <figure class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
-              <figcaption>
-                Перфоратор BOSCH<br>
-                BFG 9000
-              </figcaption>
-            </figure>
-            <p class="product-old-price">32500 р.</p>
-            <p class="product-new-price">25500 р.</p>
-          </article>
+        <article class="catalog-item">
+          <div class="product-img">
+            <!-- [Исправить] Размеры и адрес рисунка-->
+            <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+          </div>
 
-          <article class="catalog-item">
-            <figure class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
-              <figcaption>
-                Перфоратор BOSCH<br>
-                BFG 3000
-              </figcaption>
-            </figure>
-            <p class="product-old-price">22500 р.</p>
-            <p class="product-new-price">15500 р.</p>
-          </article>
+          <div class="product-info">
+            <span class="product-name">Перфоратор BOSCH</span>
+            <span class="product-model">BFG 9000</span>
 
-          <article class="catalog-item">
-            <figure class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
-              <figcaption>
-                Перфоратор BOSCH<br>
-                BFG 6000
-              </figcaption>
-            </figure>
-            <p class="product-old-price">30500 р.</p>
-            <p class="product-new-price">25500 р.</p>
-          </article>
+            <span class="product-old-price">32500 р.</span>
+            <span class="product-new-price">25500 р.</span>
+          </div>
+        </article>
 
-          <article class="catalog-item">
-            <p class="label-new">New<p>
-            <figure class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
-              <figcaption>
-                Перфоратор BOSCH<br>
-                BFG 2000
-              </figcaption>
-            </figure>
-            <p class="product-new-price">12500 р.</p>
-          </article>
-      </article>
+        <article class="catalog-item">
+          <div class="product-img">
+            <!-- [Исправить] Размеры и адрес рисунка-->
+            <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+          </div>
 
-      <article class="mini-catalog-article">
-        <header class="mini-catalog-header">
+          <div class="product-info">
+            <span class="product-name">Перфоратор BOSCH</span>
+            <span class="product-model">BFG 3000</span>
+
+            <span class="product-old-price">22500 р.</span>
+            <span class="product-new-price">15500 р.</span>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="product-img">
+            <!-- [Исправить] Размеры и адрес рисунка-->
+            <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+          </div>
+
+          <div class="product-info">
+            <span class="product-name">Перфоратор BOSCH</span>
+            <span class="product-model">BFG 6000</span>
+
+            <span class="product-old-price">30500 р.</span>
+            <span class="product-new-price">25500 р.</span>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="label-new">New</div>
+          <div class="product-img">
+            <!-- [Исправить] Размеры и адрес рисунка-->
+            <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+          </div>
+
+          <div class="product-info">
+            <span class="product-name">Перфоратор BOSCH</span>
+            <span class="product-model">BFG 2000</span>
+
+            <span class="product-new-price">12500 р.</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="mini-catalog">
+        <div class="mini-catalog-header">
           <!-- [] Чтоб разнести по сторонам, обернуть в дивы-контейнеры? -->
           <h2>Популярные производители:</h2>
           <a class="btn btn-more-info" href="#">Все производители</a>
-        </header>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="bosch">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="bosch">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="thakita">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="thakita">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="dewalt">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="dewalt">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="интерскол">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="интерскол">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="hitachi">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="hitachi">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="lg">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="lg">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="aeg">
-          </figure>
-        </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="aeg">
+            </a>
+          </div>
+        </div>
 
-        <article class="catalog-item">
-          <figure class="product-logo-img">
-            <img src="http://placehold.it/150x100" width="100" height="30" alt="metabo">
-          </figure>
-        </article>
-      </article>
+        <div class="catalog-item">
+          <div class="product-logo-img">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="100" height="30" alt="metabo">
+            </a>
+          </div>
+        </div>
+      </section>
 
       <article class="services">
         <section class="services-desc">
@@ -239,33 +274,55 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </section>
 
-        <article>
+        <section class="services-description">
           <aside class="services-navigation">
-            <a href="#">Доставка</a>
+            <a class="services-active">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Кредит</a>
           </aside>
-          <!-- [Вопрсо] Как верстать скрытые слои поведения: слайде, активный и остальные
-          пункты меню -->
+
           <section class="services-item">
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!</p>
+            <div>
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </div>
           </section>
-        </article>
+
+          <section class="services-item">
+            <h3>Гарантия</h3>
+            <div>
+              Если купленный у нас товар поломается или заискрит,<br>
+              а аткже в случае пожара, спровоцированного его возгоранием,<br>
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+              сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </div>
+          </section>
+
+          <section class="services-item">
+            <h3>Кредит</h3>
+            <div>
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.<br>
+              <a class="btn btn-more-info" href="#">Отправить заявку</a>
+            </div>
+          </section>
+        </section>
       </article>
 
       <article class="about-us">
-        <article class="info">
+        <section class="info">
           <h2>Компания "Техномарт"</h2>
 
-          <p>Настоящий мужской шоппинг насинается здесь! Огромный выбор товаров для ремонта
-          и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:</p>
+          <div>
+            <p>Настоящий мужской шоппинг насинается здесь! Огромный выбор товаров для ремонта
+               и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями:</p>
+          </div>
 
           <ul class="list-transport-companies">
             <li>Деловые линии</li>
@@ -274,30 +331,58 @@
           </ul>
 
           <a class="btn btn-more-info" href="#">Подробнее о компании</a>
-        </article>
+        </section>
 
-        <article class="contacts">
+        <section class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами,<br>
-          заехав в наш офис:</p>
+
+          <div>Вы можете забрать товар сами,<br>
+          заехав в наш офис:</div>
            <!-- [Исправить] адрес, размеры картнки. И картинка ли или фон или как?-->
           <div class="map">
-            <img src="http://placehold.it/150x100" width="200" height="100" alt="Большая Конюшенная ул., 19">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="200" height="100" alt="Большая Конюшенная ул., 19">
+            </a>
           </div>
 
-          <a class="btn btn-more-info" href="#">Заблудились? Напишите нам!</a>
-        </article>
+          <a class="btn btn-more-info" href="#popup">Заблудились? Напишите нам!</a>
+        </section>
       </article>
+
+      <div class="popup">
+        <form action="URL" method="post">
+          <fieldset>
+            <p>
+              <label for="username">Ваше имя:</label>
+              <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
+            </p>
+
+            <p>
+              <label for="usermail">Ваш e-mail:</label>
+              <input type="text" id="usermail" placeholder="Для отправки ответа">
+            </p>
+
+            <p>
+              <label for="message">Текст письма:</label>
+              <textarea id="message" rows="5">В свободной форме</textarea>
+            </p>
+          </fieldset>
+
+          <fieldset class="button">
+            <button class="btn btn-send" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <section class="page-footer-top">
-          <div class="logo">
-            Техномарт
-          </div>
-
           <nav class="footer-menu">
+            <div class="logo">
+              Техномарт
+            </div>
+
             <ul>
               <li>
                 <a href="#">Компания</a>
@@ -355,12 +440,12 @@
           </section>
 
           <section class="feedback">
-            Обратная связь:
+            <span>Обратная связь:</span>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
 
           <section class="feedback">
-            Разработано-
+            <span>Разработано-</span>
             <a href="htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </section>
