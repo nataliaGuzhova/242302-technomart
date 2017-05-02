@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <section class="page-header-top">
-        <div class="container">
+        <div class="container clearfix">
           <div class="logo">
             <h1>Техномарт</h1>
           </div>
@@ -90,7 +90,7 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <div class="breadcrumbs">
           <ul>
             <li>
@@ -108,15 +108,15 @@
           </ul>
         </div>
 
-        <h1>Перфораторы</h1>
+        <h1 class="catalog-title">Перфораторы</h1>
 
-        <aside>
+        <aside class="catalog-filters">
           <div class="section-header">
             <h2>Фильтр:</h2>
           </div>
 
           <form action="#" method="get">
-            <fieldset class="filter price">
+            <fieldset class="filter-price">
               <legend>Цена:</legend>
 
               <div class="range">
@@ -180,7 +180,7 @@
         </aside>
 
         <section class="catalog">
-          <div class="section-header">
+          <div class="section-header clearfix">
             <h2>Сортировка:</h2>
 
             <ul class="sorting">
@@ -416,22 +416,6 @@
           </div>
         </section>
       </div>
-      <!-- [Исправлено] Забыла сверстать добавление в корзину-->
-      <div class="popup">
-        <!-- <a href="#">
-          <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
-        </a> -->
-        <div class="cross-icon">
-        </div>
-
-        <div class="cart-info">
-          Товар добавлен в корзину!
-        </div>
-        <div>
-          <a href="#">Оформить заказ</a>
-          <a href="#">Продолжить покупки</a>
-        </div>
-      </div>
 
       <section class="about-perforators">
         <div class="container">
@@ -448,12 +432,12 @@
     <footer class="page-footer">
       <section class="page-footer-top">
         <div class="container">
-          <nav class="footer-menu">
+          <nav class="footer-menu clearfix">
             <div class="logo">
               Техномарт
             </div>
 
-            <ul>
+            <ul class="footer-main-nav">
               <li>
                 <a href="#">Компания</a>
               </li>
@@ -472,10 +456,11 @@
             </ul>
           </nav>
 
-          <div class="footer-contacts">
-            г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
-            +7(812)555-05-55
-          </div>
+          <div class="clearfix">
+            <div class="footer-contacts">
+              г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+              +7(812)555-05-55
+            </div>
 
           <nav class="footer-catalog-navigation">
             <ul>
@@ -497,7 +482,7 @@
       </section>
 
       <section class="page-footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <section class="copyrights">
             2010-2017 Компания "Техномарт"<br>
             Все права защищены
@@ -521,5 +506,21 @@
         </div>
       </section>
     </footer>
+    <!-- [Исправлено] Забыла сверстать добавление в корзину-->
+    <div class="popup">
+      <!-- <a href="#">
+        <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
+      </a> -->
+      <div class="cross-icon">
+      </div>
+
+      <div class="cart-info">
+        Товар добавлен в корзину!
+      </div>
+      <div>
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+      </div>
+    </div>
   </body>
 </html>

@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <section class="page-header-top">
-        <div class="container">
+        <div class="container clearfix">
           <div class="logo">
             <h1>Техномарт</h1>
           </div>
@@ -81,7 +81,7 @@
 правильно ли я понимаю что этот тег вообще не стилизуется? а больше используется именно для логического разделения разметки?-->
       <div class="features">
         <div class="container">
-          <div class="container-row">
+          <div class="container-row clearfix">
             <div class="features-item">
               <div class="label-new">
                 <img src="img/flag-new.png" width="60" height="60" alt="new">
@@ -102,7 +102,7 @@
             </div>
           </div>
 
-          <div class="container-row">
+          <div class="container-row clearfix">
             <div class="slider">
               <div class="slider-controls">
                 <label for="slide-1">1</label>
@@ -145,7 +145,7 @@
 
       <div class="container">
         <section class="mini-catalog">
-          <div class="mini-catalog-header">
+          <div class="mini-catalog-header clearfix">
             <h2>Популярные товары</h2>
             <a class="btn btn-more-info" href="#">Все популярные товары</a>
           </div>
@@ -214,7 +214,10 @@
           </article>
 
           <article class="catalog-item">
-            <div class="label-new">New</div>
+            <div class="label-new">
+              <img src="img/flag-new.png" width="60" height="60" alt="new">
+            </div>
+
             <div class="product-img">
               <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
             </div>
@@ -285,7 +288,7 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </section>
 
-          <div class="services-slider">
+          <div class="services-slider clearfix">
             <div class="services-navigation">
               <p>
                 <label class="btn btn-slider-services services-active" for="delivery">Доставка</label>
@@ -303,7 +306,7 @@
               </p>
             </div>
 
-            <div class="services-slides">
+            <div class="services-content">
               <div class="services-slide">
                 <h3>Доставка</h3>
                 <div>
@@ -339,7 +342,7 @@
       </div>
 
       <section class="about-us">
-        <div class="container">
+        <div class="container clearfix">
           <section class="info">
             <h2>Компания "Техномарт"</h2>
 
@@ -377,43 +380,12 @@
           </section>
         </div>
       </section>
-
-      <div class="popup">
-        <!-- <a href="#">
-          <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
-        </a> -->
-        <div class="cross-icon">
-        </div>
-
-        <form action="#" method="post">
-          <fieldset>
-            <p>
-              <label for="username">Ваше имя:</label>
-              <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
-            </p>
-
-            <p>
-              <label for="usermail">Ваш e-mail:</label>
-              <input type="text" id="usermail" placeholder="Для отправки ответа">
-            </p>
-
-            <p>
-              <label for="message">Текст письма:</label>
-              <textarea id="message" rows="5">В свободной форме</textarea>
-            </p>
-          </fieldset>
-
-          <fieldset class="button">
-            <button class="btn btn-send" type="submit">Отправить</button>
-          </fieldset>
-        </form>
-      </div>
     </main>
 
     <footer class="page-footer">
       <section class="page-footer-top">
         <div class="container">
-          <nav class="footer-menu">
+          <nav class="footer-menu clearfix">
             <div class="logo">
               Техномарт
             </div>
@@ -464,7 +436,7 @@
       </section>
 
       <section class="page-footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <section class="copyrights">
             2010-2017 Компания "Техномарт"<br>
             Все права защищены
@@ -488,5 +460,36 @@
         </div>
       </section>
     </footer>
+
+    <div class="popup">
+      <!-- <a href="#">
+        <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
+      </a> -->
+      <div class="cross-icon">
+      </div>
+
+      <form action="#" method="post">
+        <fieldset>
+          <p>
+            <label for="username">Ваше имя:</label>
+            <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
+          </p>
+
+          <p>
+            <label for="usermail">Ваш e-mail:</label>
+            <input type="text" id="usermail" placeholder="Для отправки ответа">
+          </p>
+
+          <p>
+            <label for="message">Текст письма:</label>
+            <textarea id="message" rows="5">В свободной форме</textarea>
+          </p>
+        </fieldset>
+
+        <fieldset class="button">
+          <button class="btn btn-send" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
