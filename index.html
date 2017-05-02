@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -55,7 +56,7 @@
                 <a href="#">Компания</a>
               </li>
               <li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li>
                 <a href="#">Новости</a>
@@ -82,7 +83,10 @@
         <div class="container">
           <div class="container-row">
             <div class="features-item">
-              <div class="label-new">New</div>
+              <div class="label-new">
+                <img src="img/flag-new.png" width="60" height="60" alt="new">
+              </div>
+
               <p>Материалы</p>
               <a class="btn btn-features" href="#">На любой вкус</a>
             </div>
@@ -148,8 +152,7 @@
 
           <article class="catalog-item">
             <div class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
             </div>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -170,8 +173,7 @@
 
           <article class="catalog-item">
             <div class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
             </div>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -192,8 +194,7 @@
 
           <article class="catalog-item">
             <div class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
             </div>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -215,8 +216,7 @@
           <article class="catalog-item">
             <div class="label-new">New</div>
             <div class="product-img">
-              <!-- [Исправить] Размеры и адрес рисунка-->
-              <img src="http://placehold.it/150x100" width="100" height="200" alt="">
+              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
             </div>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -243,35 +243,35 @@
 
           <div class="popular-firms-container">
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="bosch">
+              <img src="img/logo-firm/logo-bosch.png" width="220" height="145" alt="bosch">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="thakita">
+              <img src="img/logo-firm/logo-makita.png" width="220" height="145" alt="makita">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="dewalt">
+              <img src="img/logo-firm/logo-dewalt.png" width="220" height="145" alt="dewalt">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="интерскол">
+              <img src="img/logo-firm/logo-interskol.png" width="220" height="145" alt="интерскол">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="hitachi">
+              <img src="img/logo-firm/logo-hitachi.png" width="220" height="145" alt="hitachi">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="lg">
+              <img src="img/logo-firm/logo-lg.png" width="220" height="145" alt="lg">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="aeg">
+              <img src="img/logo-firm/logo-aeg.png" width="220" height="145" alt="aeg">
             </a>
 
             <a class="product-logo-img" href="#">
-              <img src="http://placehold.it/150x100" width="100" height="30" alt="metabo">
+              <img src="img/logo-firm/logo-metabo.png" width="220" height="145" alt="metabo">
             </a>
           </div>
         </section>
@@ -362,12 +362,14 @@
           <section class="contacts">
             <h2>Контакты</h2>
 
-            <div>Вы можете забрать товар сами,
-            заехав в наш офис:</div>
-             <!-- [Исправить] адрес, размеры картнки. И картинка ли или фон или как?-->
+            <div>
+              Вы можете забрать товар сами,
+              заехав в наш офис:
+            </div>
+
             <div class="map">
               <a href="#">
-                <img src="http://placehold.it/150x100" width="200" height="100" alt="Большая Конюшенная ул., 19">
+                <img src="img/map.png" width="300" height="158" alt="Техномарт - Большая Конюшенная ул., 19">
               </a>
             </div>
 
@@ -377,6 +379,10 @@
       </section>
 
       <div class="popup">
+        <a href="#">
+          <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
+        </a>
+
         <form action="#" method="post">
           <fieldset>
             <p>
@@ -418,7 +424,7 @@
                 <a href="#">Новости</a>
               </li>
               <li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li>
                 <a href="#">Доставка</a>

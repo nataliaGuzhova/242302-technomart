@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -62,7 +63,7 @@
           <nav class="main-menu">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
@@ -93,7 +94,7 @@
         <div class="breadcrumbs">
           <ul>
             <li>
-              <a href="#"></a>
+              <a href="index.html"></a>
             </li>
             <li>
               <a href="#">Каталог</a>
@@ -114,7 +115,7 @@
             <h2>Фильтр:</h2>
           </div>
 
-          <form action="URL" method="get">
+          <form action="#" method="get">
             <fieldset class="filter price">
               <legend>Цена:</legend>
 
@@ -206,7 +207,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 3000">
+              <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -227,7 +228,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 6000">
+              <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -246,7 +247,9 @@
           </article>
 
           <article class="catalog-item">
-            <div class="label-new">New</div>
+            <div class="label-new">
+              <img src="img/flag-new.png" width="60" height="60" alt="new">
+            </div>
 
             <div class="add-links">
               <a class="btn btn-add to-cart">Купить</a>
@@ -265,7 +268,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 3000">
+              <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -285,10 +288,12 @@
           </article>
 
           <article class="catalog-item">
-            <div class="label-new">New</div>
+            <div class="label-new">
+              <img src="img/flag-new.png" width="60" height="60" alt="new">
+            </div>
 
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 6000">
+              <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -309,7 +314,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 2000">
+              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -328,10 +333,12 @@
           </article>
 
           <article class="catalog-item">
-            <div class="label-new">New</div>
+            <div class="label-new">
+              <img src="img/flag-new.png" width="60" height="60" alt="new">
+            </div>
 
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 3000">
+              <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -352,7 +359,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 6000">
+              <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -373,7 +380,7 @@
 
           <article class="catalog-item">
             <a class="product-img" href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="bosch bfg 2000">
+              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
             </a>
             <!-- Всплывающий блок при наведении -->
             <div class="add-links">
@@ -408,6 +415,20 @@
             </ul>
           </div>
         </section>
+      </div>
+      <!-- [Исправлено] Забыла сверстать добавление в корзину-->
+      <div class="popup">
+        <a href="#">
+          <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
+        </a>
+
+        <div class="cart-info">
+          Товар добавлен в корзину!
+        </div>
+        <div>
+          <a href="#">Оформить заказ</a>
+          <a href="#">Продолжить покупки</a>
+        </div>
       </div>
 
       <section class="about-perforators">
