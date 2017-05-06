@@ -6,20 +6,15 @@ body {
   color: #000000;
 }
 
-.logo h1 {
-  font-size: 24px;
-  line-height: 24px;
-  font-family: 'Curpum', 'Arial', sans-serif;
-  color: #ffffff;
-}
-
 .info h2 {
   font-size: 30px;
-  font-family: 'Curpum', 'Arial', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 .page-header-top {
   background-color: #33445a;
+
+  color: #ffffff;
 }
 
 .container {
@@ -32,11 +27,68 @@ body {
 .logo {
   float: left;
   width: 220px;
+  box-sizing: border-box;
+  text-align: center;
+
+  background-color: #ff5357;
+  box-shadow: 0 5px 0 0 #c23f42;
+}
+
+.logo a {
+  display: block;
+  padding: 10px;
+}
+
+.logo a:active {
+  background-color: #ba2732;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.logo h1 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .search {
   float: left;
-  width: 270px;
+  max-width: 270px;
+}
+
+.search input {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.search label {
+  position: relative;
+  padding-left: 34px;
+}
+
+.search label::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  transform: translate(-50%, -50%);
+
+  width: 17px;
+  height: 17px;
+
+  background: transparent url("img/icons/sprite.png") no-repeat;
+  background-position: -5px -445px;
+  /*opacity: 0.3;*/
 }
 
 .links {
