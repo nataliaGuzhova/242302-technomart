@@ -191,7 +191,7 @@ body {
 .product-name {
   margin: 0px;
 }
-.mini-catalog .catalog-item:nth-child(4n) {
+.mini-catalog-content .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -412,12 +412,7 @@ body {
   font-size: 13px;
 }
 
-.catalog .catalog-item {
-  width: 220px;
-  height: 320px;
-}
-
-.catalog article:nth-of-type(3n) {
+.catalog-content .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
