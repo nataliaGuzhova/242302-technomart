@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic">
+
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
     <header class="page-header">
       <section class="page-header-top">
-        <div class="container">
+        <div class="container clearfix">
           <div class="logo">
-            <h1>Техномарт</h1>
+            <h1><a>Техномарт</a></h1>
           </div>
 
           <div class="search">
             <form action="#" method="get">
-              <label for="search-input">Поиск:</label>
-              <input type="text" id="search-input">
-              <button class="btn-search" type="submit"></button>
+              <label for="search-input"></label>
+              <input type="text" id="search-input" placeholder="Поиск:">
+              <!-- <button class="btn-search" type="submit"></button> -->
             </form>
           </div>
 
@@ -81,7 +84,7 @@
 правильно ли я понимаю что этот тег вообще не стилизуется? а больше используется именно для логического разделения разметки?-->
       <div class="features">
         <div class="container">
-          <div class="container-row">
+          <div class="container-row clearfix">
             <div class="features-item">
               <div class="label-new">
                 <img src="img/flag-new.png" width="60" height="60" alt="new">
@@ -102,7 +105,7 @@
             </div>
           </div>
 
-          <div class="container-row">
+          <div class="container-row clearfix">
             <div class="slider">
               <div class="slider-controls">
                 <label for="slide-1">1</label>
@@ -145,94 +148,99 @@
 
       <div class="container">
         <section class="mini-catalog">
-          <div class="mini-catalog-header">
+          <div class="mini-catalog-header clearfix">
             <h2>Популярные товары</h2>
             <a class="btn btn-more-info" href="#">Все популярные товары</a>
           </div>
 
-          <article class="catalog-item">
-            <div class="product-img">
-              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
-            </div>
-            <!-- Всплывающий блок при наведении -->
-            <div class="add-links">
-              <a class="btn btn-add to-cart">Купить</a>
-              <a class="btn btn-add to-bookmarks">В закладки</a>
-            </div>
+          <div class="mini-catalog-content">
+            <article class="catalog-item">
+              <div class="product-img">
+                <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
+              </div>
+              <!-- Всплывающий блок при наведении -->
+              <div class="add-links">
+                <a class="btn btn-add to-cart">Купить</a>
+                <a class="btn btn-add to-bookmarks">В закладки</a>
+              </div>
 
-            <div class="product-info">
-              <h3 class="product-name">
-                Перфоратор BOSCH
-                BFG 9000
-              </h3>
+              <div class="product-info">
+                <h3 class="product-name">
+                  Перфоратор BOSCH
+                  BFG 9000
+                </h3>
 
-              <div class="product-old-price">32500 р.</div>
-              <div class="product-new-price">25500 р.</div>
-            </div>
-          </article>
+                <div class="product-old-price">32500 р.</div>
+                <div class="product-new-price">25500 р.</div>
+              </div>
+            </article>
 
-          <article class="catalog-item">
-            <div class="product-img">
-              <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
-            </div>
-            <!-- Всплывающий блок при наведении -->
-            <div class="add-links">
-              <a class="btn btn-add to-cart">Купить</a>
-              <a class="btn btn-add to-bookmarks">В закладки</a>
-            </div>
+            <article class="catalog-item">
+              <div class="product-img">
+                <img src="img/catalog-img/bfg-3000.png" width="220" height="150" alt="perforator bfg 3000">
+              </div>
+              <!-- Всплывающий блок при наведении -->
+              <div class="add-links">
+                <a class="btn btn-add to-cart">Купить</a>
+                <a class="btn btn-add to-bookmarks">В закладки</a>
+              </div>
 
-            <div class="product-info">
-              <h3 class="product-name">
-                Перфоратор BOSCH
-                BFG 3000
-              </h3>
+              <div class="product-info">
+                <h3 class="product-name">
+                  Перфоратор BOSCH
+                  BFG 3000
+                </h3>
 
-              <div class="product-old-price">22500 р.</div>
-              <div class="product-new-price">15500 р.</div>
-            </div>
-          </article>
+                <div class="product-old-price">22500 р.</div>
+                <div class="product-new-price">15500 р.</div>
+              </div>
+            </article>
 
-          <article class="catalog-item">
-            <div class="product-img">
-              <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
-            </div>
-            <!-- Всплывающий блок при наведении -->
-            <div class="add-links">
-              <a class="btn btn-add to-cart">Купить</a>
-              <a class="btn btn-add to-bookmarks">В закладки</a>
-            </div>
+            <article class="catalog-item">
+              <div class="product-img">
+                <img src="img/catalog-img/bfg-6000.png" width="220" height="150" alt="perforator bfg 6000">
+              </div>
+              <!-- Всплывающий блок при наведении -->
+              <div class="add-links">
+                <a class="btn btn-add to-cart">Купить</a>
+                <a class="btn btn-add to-bookmarks">В закладки</a>
+              </div>
 
-            <div class="product-info">
-              <h3 class="product-name">
-                Перфоратор BOSCH
-                BFG 6000
-              </h3>
+              <div class="product-info">
+                <h3 class="product-name">
+                  Перфоратор BOSCH
+                  BFG 6000
+                </h3>
 
-              <div class="product-old-price">30500 р.</div>
-              <div class="product-new-price">25500 р.</div>
-            </div>
-          </article>
+                <div class="product-old-price">30500 р.</div>
+                <div class="product-new-price">25500 р.</div>
+              </div>
+            </article>
 
-          <article class="catalog-item">
-            <div class="label-new">New</div>
-            <div class="product-img">
-              <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
-            </div>
-            <!-- Всплывающий блок при наведении -->
-            <div class="add-links">
-              <a class="btn btn-add to-cart">Купить</a>
-              <a class="btn btn-add to-bookmarks">В закладки</a>
-            </div>
+            <article class="catalog-item">
+              <div class="label-new">
+                <img src="img/flag-new.png" width="60" height="60" alt="new">
+              </div>
 
-            <div class="product-info">
-              <h3 class="product-name">
-                Перфоратор BOSCH
-                BFG 2000
-              </h3>
+              <div class="product-img">
+                <img src="img/catalog-img/bfg-2000.png" width="220" height="150" alt="perforator bfg 2000">
+              </div>
+              <!-- Всплывающий блок при наведении -->
+              <div class="add-links">
+                <a class="btn btn-add to-cart">Купить</a>
+                <a class="btn btn-add to-bookmarks">В закладки</a>
+              </div>
 
-              <div class="product-new-price">12500 р.</div>
-            </div>
-          </article>
+              <div class="product-info">
+                <h3 class="product-name">
+                  Перфоратор BOSCH
+                  BFG 2000
+                </h3>
+
+                <div class="product-new-price">12500 р.</div>
+              </div>
+            </article>
+          <div>
         </section>
 
         <section class="mini-catalog">
@@ -285,7 +293,7 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </section>
 
-          <div class="services-slider">
+          <div class="services-slider clearfix">
             <div class="services-navigation">
               <p>
                 <label class="btn btn-slider-services services-active" for="delivery">Доставка</label>
@@ -303,7 +311,7 @@
               </p>
             </div>
 
-            <div class="services-slides">
+            <div class="services-content">
               <div class="services-slide">
                 <h3>Доставка</h3>
                 <div>
@@ -339,7 +347,7 @@
       </div>
 
       <section class="about-us">
-        <div class="container">
+        <div class="container clearfix">
           <section class="info">
             <h2>Компания "Техномарт"</h2>
 
@@ -377,43 +385,12 @@
           </section>
         </div>
       </section>
-
-      <div class="popup">
-        <!-- <a href="#">
-          <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
-        </a> -->
-        <div class="cross-icon">
-        </div>
-
-        <form action="#" method="post">
-          <fieldset>
-            <p>
-              <label for="username">Ваше имя:</label>
-              <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
-            </p>
-
-            <p>
-              <label for="usermail">Ваш e-mail:</label>
-              <input type="text" id="usermail" placeholder="Для отправки ответа">
-            </p>
-
-            <p>
-              <label for="message">Текст письма:</label>
-              <textarea id="message" rows="5">В свободной форме</textarea>
-            </p>
-          </fieldset>
-
-          <fieldset class="button">
-            <button class="btn btn-send" type="submit">Отправить</button>
-          </fieldset>
-        </form>
-      </div>
     </main>
 
     <footer class="page-footer">
       <section class="page-footer-top">
         <div class="container">
-          <nav class="footer-menu">
+          <nav class="footer-menu clearfix">
             <div class="logo">
               Техномарт
             </div>
@@ -464,7 +441,7 @@
       </section>
 
       <section class="page-footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <section class="copyrights">
             2010-2017 Компания "Техномарт"<br>
             Все права защищены
@@ -477,16 +454,47 @@
           </section>
 
           <section class="feedback">
-            <span>Обратная связь:</span>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <span>Разработано-</span>
+            <a href="htmlacademy.ru">htmlacademy.ru</a>
           </section>
 
           <section class="feedback">
-            <span>Разработано-</span>
-            <a href="htmlacademy.ru">htmlacademy.ru</a>
+            <span>Обратная связь:</span>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
         </div>
       </section>
     </footer>
+
+    <div class="popup">
+      <!-- <a href="#">
+        <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
+      </a> -->
+      <div class="cross-icon">
+      </div>
+
+      <form action="#" method="post">
+        <fieldset>
+          <p>
+            <label for="username">Ваше имя:</label>
+            <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
+          </p>
+
+          <p>
+            <label for="usermail">Ваш e-mail:</label>
+            <input type="text" id="usermail" placeholder="Для отправки ответа">
+          </p>
+
+          <p>
+            <label for="message">Текст письма:</label>
+            <textarea id="message" rows="5">В свободной форме</textarea>
+          </p>
+        </fieldset>
+
+        <fieldset class="button">
+          <button class="btn btn-send" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>

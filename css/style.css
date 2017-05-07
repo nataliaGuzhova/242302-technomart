@@ -6,14 +6,492 @@ body {
   color: #000000;
 }
 
-.logo h1 {
-  font-size: 24px;
-  line-height: 24px;
-  font-family: 'Curpum', 'Arial', sans-serif;
+.info h2 {
+  font-size: 30px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+}
+
+.page-header-top {
+  background-color: #33445a;
+
   color: #ffffff;
 }
 
-.info h2 {
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+  padding: 0 10px;
+}
+
+.logo {
+  float: left;
+  width: 220px;
+  box-sizing: border-box;
+  text-align: center;
+
+  background-color: #ff5357;
+  box-shadow: 0 5px 0 0 #c23f42;
+}
+
+.logo a {
+  display: block;
+  padding: 10px;
+}
+
+.logo a:active {
+  background-color: #ba2732;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.logo h1 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.search {
+  float: left;
+  max-width: 270px;
+}
+
+.search input {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.search label {
+  position: relative;
+  padding-left: 34px;
+}
+
+.search label::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  transform: translate(-50%, -50%);
+
+  width: 17px;
+  height: 17px;
+
+  background: transparent url("img/icons/sprite.png") no-repeat;
+  background-position: -5px -445px;
+  /*opacity: 0.3;*/
+}
+
+.links {
+  float: right;
+  width: 470px;
+  font-size: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.bookmarks,
+.cart,
+.checkout {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+
+  font-size: 17px;
+}
+
+.page-header-bottom {
+  background-color: #f3f7f9;
+}
+
+.main-menu {
+  background-color: #3d546e;
+  clear: both;
+  margin-bottom: 60px;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.main-menu li{
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 17px;
+}
+
+.site-description {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.page-header-bottom .contacts {
+  float: left;
+  /*Или 300?*/
+  width: 270px;
+  margin-right: 50px;
+}
+
+.user-block {
+  float: right;
+  width: 300px;
+}
+.user-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+.user-nav li {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 16px;
+}
+
+.page-header {
+  margin-bottom: 60px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 125px;
+  margin-bottom: 20px;
+}
+
+.container-row:first-child .features-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.container-row:first-child .features-item:nth-child(3) {
+  float: right;
+}
+
+.container-row:last-child .features-item:last-child {
+  margin-bottom: 0;
+}
+
+.slider {
+  float: left;
+  width: 620px;
+  height: 270px;
+  margin-right: 20px;
+}
+
+.slide-content:nth-child(2) {
+  display: none;
+}
+
+.features {
+  margin-bottom: 53px;
+}
+
+.mini-catalog {
+  font-size: 0;
+}
+
+.mini-catalog-header {
+  height: 90px;
+  margin-bottom: 20px;
+
+  background-color: #f9f5f0;
+}
+
+.mini-catalog-header h2 {
+  float: left;
+  margin: 0;
+
   font-size: 30px;
-  font-family: 'Curpum', 'Arial', sans-serif;
+}
+
+.mini-catalog-header a {
+  float: right;
+
+  font-size: 14px;
+}
+
+.catalog-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  min-height: 320px;
+  margin-right: 20px;
+
+  font-size: 18px;
+}
+.product-name {
+  margin: 0px;
+}
+.mini-catalog-content .catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.mini-catalog:not(first-child) {
+  margin-top: 20px;
+}
+.popular-firms-container {
+  font-size: 0;
+}
+
+.product-logo-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product-logo-img:nth-child(4n) {
+  margin-right: 0;
+}
+/*Реально между блоками 85px, но у последнего ряда с лого нижний маргин - 20px
+я так понимаю что они сложатся и будет как на картинке.
+как нормально обнулить этот маргин внутри контейнера не придумала*/
+.services {
+  margin-top: 65px;
+}
+
+.services h2,
+.services h3,
+.services p {
+  margin: 0;
+}
+
+.services-navigation {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.services-content {
+  float: left;
+  width: 620px;
+}
+
+.services-slide:not(:first-child) {
+  display: none;
+}
+
+.services {
+  margin-bottom: 80px;
+}
+
+.info h2 {
+  margin: 0;
+}
+
+.info {
+  float: left;
+  width: 540px;
+  margin-right: 100px;
+}
+
+.contacts {
+  float: right;
+  width: 300px;
+  margin-right: 0;
+}
+
+.popup {
+  display: none;
+}
+
+.page-footer {
+  margin-top: 87px;
+}
+
+.page-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer-top {
+  background-color: #3d546e;
+}
+
+.footer-menu .logo {
+  margin-right: 170px;
+}
+
+.footer-main-nav {
+  float: right;
+  /*width: 550px
+  margin: 0 0 0 170px;*/
+
+  font-size: 0;
+}
+
+.footer-main-nav li {
+  display: inline-block;
+  vertical-align: bottom;
+
+  font-size: 18px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 80px;
+}
+
+.footer-catalog-navigation {
+  float: right;
+  /*width: 540px;*/
+}
+
+.footer-catalog-navigation ul {
+  font-size: 0;
+}
+
+.footer-catalog-navigation li {
+  display: inline-block;
+  vetrical-align: top;
+
+  font-size: 18px;
+}
+
+.page-footer-bottom {
+  background-color: #33445b;
+}
+
+.copyrights {
+  float: left;
+  width: 230px;
+  margin-right: 150px;
+}
+
+.social {
+  float: left;
+}
+
+.feedback {
+  float: right;
+  width: 140px;
+  margin-left: 20px;
+}
+
+.label-new {
+  position: absolute;
+  /*[Удалить]*/
+  display: none;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 13px;
+}
+
+.catalog-title {
+  margin: 0;
+}
+
+.catalog-filters {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog {
+  float: right;
+  width: 700px;
+
+  font-size: 0;
+}
+
+.section-header h2{
+  float: left;
+  width: 140px;
+  margin: 0 100px 0 0;
+
+  font-size: 13px;
+}
+
+.section-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.sorting {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+}
+
+.additional-sorting {
+  float: right;
+  width: 60px;
+}
+
+.section-header li {
+  display: inline-block;
+
+  font-size: 13px;
+}
+
+.catalog-content .catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.pagination li{
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 13px;
+}
+
+.btn-pagination {
+  font-size: 13px;
+}
+
+.about-perforators h2,
+.about-perforators p {
+  margin: 0;
+}
+
+.about-perforators {
+  margin-top: 60px;
 }
