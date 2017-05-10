@@ -10,14 +10,13 @@
       <section class="page-header-top">
         <div class="container clearfix">
           <div class="logo">
-            <h1>Техномарт</h1>
+            <h1><a href="index.html">Техномарт</a></h1>
           </div>
 
           <div class="search">
             <form action="#" method="get">
+              <input class="input-search" type="text" id="search-input">
               <label for="search-input">Поиск:</label>
-              <input type="text" id="search-input">
-              <button class="btn-search" type="submit"></button>
             </form>
           </div>
 
@@ -30,7 +29,7 @@
       </section>
 
       <section class="page-header-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <div class="site-description">
             Интернет-магазин
             строительных материалов
@@ -43,9 +42,8 @@
           </div>
 
           <div class="user-block">
-            <div class="user-name">
-              <a class="btn-user-block" href="#">Равшан Джамшутович</a>
-              <a class="exit" href="#"></a>
+            <div>
+              <a class="btn-user-block user-name" href="#">Равшан Джамшутович</a>
             </div>
 
             <div class="user-nav">
@@ -59,7 +57,9 @@
               </ul>
             </div>
           </div>
+        </div>
 
+        <div class="container clearfix">
           <nav class="main-menu">
             <ul>
               <li>
@@ -94,7 +94,7 @@
         <div class="breadcrumbs">
           <ul>
             <li>
-              <a href="index.html"></a>
+              <a class="home" href="index.html"></a>
             </li>
             <li>
               <a href="#">Каталог</a>
@@ -127,52 +127,38 @@
 
               <div class="price-controls">
                 <input class="price-value" type="text" id="price-min" value="0">
-                <span>-</span>
+                <span>&mdash;</span>
                 <input class="price-value" type="text" id="price-max" value="3000">
               </div>
             </fieldset>
 
-            <fieldset class="filter firm">
+            <fieldset class="filter-firm">
               <legend>Производители:</legend>
 
-              <p>
-                <label for="check-bosch">Bosch</label>
-                <input class="fiiter checkbox" type="checkbox" name="bosch" id="check-bosch" checked>
-              </p>
+              <input class="fiiter checkbox" type="checkbox" name="bosch" id="check-bosch" checked>
+              <label for="check-bosch">Bosch</label>
 
-              <p>
-                <label for="check-inter">Интерсол</label>
-                <input class="fiiter checkbox" type="checkbox" name="inter" id="check-inter">
-              </p>
+              <input class="fiiter checkbox" type="checkbox" name="inter" id="check-inter">
+              <label for="check-inter">Интерсол</label>
 
-              <p>
-                <label for="check-makita">Makita</label>
-                <input class="fiiter checkbox" type="checkbox" name="makita" id="check-makita" checked>
-              </p>
+              <input class="fiiter checkbox" type="checkbox" name="makita" id="check-makita" checked>
+              <label for="check-makita">Makita</label>
 
-              <p>
-                <label for="check-dewalt">Dewalt</label>
-                <input class="fiiter checkbox" type="checkbox" name="dewalt" id="check-dewalt">
-              </p>
+              <input class="fiiter checkbox" type="checkbox" name="dewalt" id="check-dewalt">
+              <label for="check-dewalt">Dewalt</label>
 
-              <p>
-                <label for="check-hitachi">Hitachi</label>
-                <input class="fiiter checkbox" type="checkbox" name="hitachi" id="check-hitachi">
-              </p>
+              <input class="fiiter checkbox" type="checkbox" name="hitachi" id="check-hitachi">
+              <label for="check-hitachi">Hitachi</label>
             </fieldset>
 
-            <fieldset class="filter power">
+            <fieldset class="filter-power">
               <legend>Питание:</legend>
 
-              <p>
-                <label for="battery">Аккумуляторные</label>
-                <input class="fiiter radio" type="radio" name="power" id="battery" checked>
-              </p>
+              <input class="fiiter radio" type="radio" name="power" id="battery" checked>
+              <label for="battery">Аккумуляторные</label>
 
-              <p>
-                <label for="network">Сетевые</label>
-                <input class="fiiter radio" type="radio" name="power" id="network">
-              </p>
+              <input class="fiiter radio" type="radio" name="power" id="network">
+              <label for="network">Сетевые</label>
             </fieldset>
 
             <button class="btn btn-filter" type="submit">Показать</button>
@@ -197,10 +183,10 @@
 
             <ul class="additional-sorting">
               <li>
-                <a class="sorting-top" href="#"></a>
+                <a class="sorting-top active-sort" href="#">по возрастанию</a>
               </li>
               <li>
-                <a class="sorting-bottom" href="#"></a>
+                <a class="sorting-bottom" href="#">по убыванию</a>
               </li>
             </ul>
           </div>
@@ -247,7 +233,7 @@
               </div>
             </article>
 
-            <article class="catalog-item">
+            <article class="catalog-item new">
               <div class="label-new">
                 <img src="img/flag-new.png" width="60" height="60" alt="new">
               </div>
@@ -292,7 +278,7 @@
               </div>
             </article>
 
-            <article class="catalog-item">
+            <article class="catalog-item new">
               <div class="label-new">
                 <img src="img/flag-new.png" width="60" height="60" alt="new">
               </div>
@@ -337,7 +323,7 @@
               </div>
             </article>
 
-            <article class="catalog-item">
+            <article class="catalog-item new">
               <div class="label-new">
                 <img src="img/flag-new.png" width="60" height="60" alt="new">
               </div>
@@ -438,12 +424,12 @@
     <footer class="page-footer">
       <section class="page-footer-top">
         <div class="container">
-          <nav class="footer-menu clearfix">
+          <nav class="footer-main-nav clearfix">
             <div class="logo">
-              Техномарт
+              <a href="index.html">Техномарт</a>
             </div>
 
-            <ul class="footer-main-nav">
+            <ul class="footer-menu">
               <li>
                 <a href="#">Компания</a>
               </li>
@@ -468,7 +454,7 @@
               +7(812)555-05-55
             </div>
 
-          <nav class="footer-catalog-navigation">
+          <nav class="footer-menu catalog-nav">
             <ul>
               <li>
                 <a href="#">Материалы</a>
@@ -490,7 +476,7 @@
       <section class="page-footer-bottom">
         <div class="container clearfix">
           <section class="copyrights">
-            2010-2017 Компания "Техномарт"<br>
+            &copy; 2010-2017 Компания "Техномарт"<br>
             Все права защищены
           </section>
 
@@ -512,20 +498,19 @@
         </div>
       </section>
     </footer>
-    <!-- [Исправлено] Забыла сверстать добавление в корзину-->
+
     <div class="popup">
       <!-- <a href="#">
         <img src="img/icons/icon-cross.svg" width="21" height="21" alt="">
       </a> -->
-      <div class="cross-icon">
-      </div>
+      <button class="btn-popup-close" type="button">Закрыть</button>
 
       <div class="cart-info">
         Товар добавлен в корзину!
       </div>
-      <div>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
+      <div class="footer-popup">
+        <a class="btn btn-go-cart" href="#">Оформить заказ</a>
+        <a class="btn btn-back" href="#">Продолжить покупки</a>
       </div>
     </div>
   </body>
