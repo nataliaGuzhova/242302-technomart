@@ -102,6 +102,7 @@ body {
 }
 
 .input-search {
+  position: absolute;
   display: inline-block;
   width: 100%;
   padding: 12px 5px 12px 49px;
@@ -167,7 +168,8 @@ body {
   font-size: 0;
 }
 
-.input-search:focus+label::before {
+.input-search:focus + label::before {
+  z-index: 1;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -760px;
   opacity: 1;
