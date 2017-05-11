@@ -1504,7 +1504,7 @@ body {
 .popup {
   position: absolute;
   width: 620px;
-  display: none;
+  /*display: none;*/
   /*??*/
   margin-left: -310px;
   top: 50%;
@@ -1576,6 +1576,8 @@ body {
 
 .form-content textarea {
   width: 460px;
+  overflow-y: hidden;
+  resize: none;
 }
 
 .form-content input[type="text"],
@@ -1591,6 +1593,23 @@ body {
   background-color: #ffffff;
   border: 2px solid #dee3e4;
   border-radius: 2px;
+}
+
+.form-content input[type="text"]::-webkit-input-placeholder,
+.form-content textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: rgba(169, 169, 169, 1);
+}
+
+.form-content input[type="text"]::-moz-placeholder,
+.form-content textarea::-moz-placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: rgba(169, 169, 169, 1);
+  opacity: 1;
 }
 
 .form-content label {
