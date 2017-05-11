@@ -1527,12 +1527,12 @@ body {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   width: 620px;
-  display: none;
+  /*display: none;*/
   /*??*/
   margin-left: -310px;
-  top: 50%;
+  top: 25%;
   left: 50%;
   box-sizing: border-box;
   z-index: 100;
@@ -1560,10 +1560,10 @@ body {
 .btn-popup-close::after {
   content: "";
   position: absolute;
-  width: 19px;
-  height: 3px;
-  top: 10px;
-  left: 2px;
+  width: 24px;
+  height: 4px;
+  top: 8px;
+  right: 0;
 
   background-color: #ff5357;
 }
@@ -1577,26 +1577,41 @@ body {
 }
 
 .form-content {
-  padding: 45px 80px 40px;
+  padding: 47px 80px 30px;
+  margin: 0;
 
   font-size: 0;
   border: none;
-  padding-bottom: 40px;
 }
 
-.form-content p:nth-child(1),
-.form-content p:nth-child(2) {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 0 20px;
-}
-
-.form-content p:nth-child(1) {
-  margin-right: 16px;
-}
-
-.form-content input[type="text"] {
+.form-content .uname,
+.form-content .input-name {
+  float: left;
   width: 220px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.form-content .umail,
+.form-content .input-mail {
+  float: right;
+  width: 220px;
+}
+
+.umail,
+.uname,
+.message {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: normal;
+  color: #000000;
+}
+
+.message {
+  display: block;
+  clear: both;
+  padding: 10px 0 10px 1px;
 }
 
 .form-content textarea {
@@ -1607,7 +1622,7 @@ body {
 
 .form-content input[type="text"],
 .form-content textarea {
-  padding: 11px;
+  padding: 8px 14px;
   box-sizing: border-box;
 
   font-size: 13px;
@@ -1637,16 +1652,6 @@ body {
   opacity: 1;
 }
 
-.form-content label {
-  display: block;
-  margin-bottom: 10px;
-
-  font-size: 18px;
-  line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  color: #000000;
-}
-
 .footer-popup {
   padding: 35px 80px;
   background-color: #f4f4f4;
@@ -1662,8 +1667,8 @@ body {
 
 .popup .cart-info {
   position: relative;
-  margin: 65px 80px;
-  padding: 0 5px 0 95px;
+  margin: 65px 80px 77px;
+  padding: 5px 5px 0 100px;
   box-sizing: border-box;
 
   font-size: 30px;
@@ -1678,7 +1683,7 @@ body {
   width: 65px;
   height: 65px;
 
-  top: -20px;
+  top: -17px;
   left: 0;
 
   background: #63a63e;
@@ -1691,7 +1696,7 @@ body {
   width: 39px;
   height: 30px;
 
-  top: 0;
+  top: 2px;
   left: 15px;
 
   background: transparent url("../img/sprite.png");
