@@ -8,17 +8,12 @@ body {
   font-family: 'PT Sans', 'Arial', sans-serif;
   color: #000000;
 }
-/*Важно!
-В карточке товара на главной странице и в каталоге разные расстояния
-от картинки до заголовка (~10px).
-Соотв если накладывать в качестве фона изображение из макета то все съезжает на разных страницах
-*/
+
 .info h2 {
   font-size: 30px;
   font-family: 'Cuprum', 'Arial', sans-serif;
 }
-/*[В] Почему лого по высоте выползает из контейнера?
-И почему ломается фон контейнера при уменьшении размера экрана?*/
+
 .page-header-top {
   background-color: #33445a;
 
@@ -41,7 +36,8 @@ body {
 .btn {
   display: block;
   width: 195px;
-  padding: 12px;
+  padding: 12px 12px 9px;
+  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 18px;
@@ -75,7 +71,7 @@ body {
 
 .logo a {
   display: block;
-  padding: 10px;
+  padding: 10px 10px 9px;
 
   font-size: 24px;
   font-weight: normal;
@@ -257,7 +253,9 @@ body {
   background-position: -5px -160px;
   opacity: 0.3;
 }
-
+.cart {
+  padding: 11px 10px 13px 48px;
+}
 .cart.cart-full {
   background-color: #ee3643;
 }
@@ -286,7 +284,7 @@ body {
   float: left;
   width: 300px;
   margin-right: 20px;
-  padding: 0 53px;
+  padding: 4px 53px;
   box-sizing: border-box;
 
   font-style: italic;
@@ -306,7 +304,7 @@ body {
 .contacts .tel {
   display: block;
   position: relative;
-  padding: 8px 5px 8px 70px;
+  padding: 12px 5px 9px 70px;
 
   font-size: 21px;
   line-height: 18px;
@@ -331,7 +329,8 @@ body {
 
 .contacts .address {
   display: block;
-  padding: 8px 5px 0 5px;
+  padding: 6px 5px 0 1px;
+  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 24px;
@@ -349,7 +348,8 @@ body {
 
 .btn-user-block {
   display: inline-block;
-  padding: 11px 5px;
+  padding: 14px 5px;
+  box-sizing: border-box;
 
   font-size: 21px;
   line-height: 18px;
@@ -360,7 +360,7 @@ body {
 
   background-color: #ffffff;
 }
-/*Добавить иконки входа-выхода псевдолементами.*/
+
 .btn-user-block:hover {
   color: #ee3643;
 }
@@ -378,7 +378,7 @@ body {
 .btn-user-block.login {
   position: relative;
   width: 120px;
-  padding-left: 48px;
+  padding-left: 50px;
   box-sizing: border-box;
 
   text-align: left;
@@ -387,8 +387,8 @@ body {
 .btn-user-block.login::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 14px;
+  top: 14px;
+  left: 16px;
 
   width: 20px;
   height: 17px;
@@ -404,7 +404,8 @@ body {
 
 .btn-user-block.user-name {
   position: relative;
-  padding-left: 50px;
+  width: 300px;
+  padding-left: 40px;
   padding-right: 60px;
 }
 
@@ -427,8 +428,8 @@ body {
   width: 21px;
   height: 17px;
 
-  top: 13px;
-  right: 12px;
+  top: 15px;
+  right: 11px;
 
   background: transparent url("../img/sprite.png") no-repeat;;
   background-position: -5px -600px;
@@ -453,7 +454,7 @@ body {
 }
 
 .user-nav {
-  padding: 8px 10px;
+  padding: 3px 13px;
   text-align: left;
 }
 
@@ -513,7 +514,7 @@ body {
 }
 
 .main-menu {
-  margin-top: 30px;
+  margin-top: 36px;
   margin-bottom: 60px;
   text-align: center;
 
@@ -524,7 +525,7 @@ body {
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
 
   font-size: 0;
 }
@@ -559,7 +560,7 @@ body {
 }
 
 .features {
-  margin-top: 70px;
+  margin-top: 63px;
   margin-bottom: 53px;
 }
 
@@ -569,7 +570,7 @@ body {
   width: 300px;
   height: 123px;
   margin-bottom: 20px;
-  padding: 23px;
+  padding: 20px 23px;
   box-sizing: border-box;
 
   font-size: 24px;
@@ -585,8 +586,9 @@ body {
 .features-item a {
   display: block;
   width: 135px;
-  padding: 12px 5px;
+  padding: 10px 5px;
   margin-left: 2px;
+  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 18px;
@@ -733,7 +735,7 @@ body {
 .slide-content {
   position: relative;
   box-sizing: border-box;
-  padding: 22px 25px;
+  padding: 25px 25px 20px;
   width: 100%;
   height: 100%;
 }
@@ -799,15 +801,15 @@ body {
 
 .slide-content p {
   margin: 0;
-  margin-top: 1px;
+  margin-top: 5px;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   color: #ffffff;
 }
 
 .slide-content a {
-  margin-top: 124px;
+  margin-top: 120px;
 }
 
 .slider .btn-slider {
@@ -828,7 +830,7 @@ body {
 
 .btn-slider.next {
   top: 115px;
-  right: 25px;
+  right: 20px;
 
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -683px;
@@ -841,7 +843,7 @@ body {
 .mini-catalog-header {
   box-sizing: border-box;
   min-height: 90px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding: 25px;
 
   background-color: #f9f5f0;
@@ -850,7 +852,7 @@ body {
 .mini-catalog-header h2 {
   float: left;
   margin: 0;
-  padding: 4px;
+  padding: 4px 0px;
 
   font-size: 30px;
   line-height: 30px;
@@ -861,6 +863,7 @@ body {
 
 .mini-catalog-header a {
   float: right;
+  width: 253px;
 }
 
 .catalog-item {
@@ -877,7 +880,7 @@ body {
 }
 
 .catalog-content {
-  margin-top: 10px;
+  margin-top: 17px;
   margin-bottom: 30px;
 }
 
@@ -895,7 +898,7 @@ body {
 }
 
 .catalog-item .product-info {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-size: 0;
 }
@@ -920,6 +923,7 @@ body {
   font-family: 'PT Sans', 'Arial', sans-serif;;
   font-weight: bold;
   text-decoration: line-through;
+  text-transform: uppercase;
   color: #a9a9a9;
 }
 
@@ -971,11 +975,11 @@ body {
 .catalog-item:hover,
 .product-logo-img:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-  border: none;
+  border: 1px solid #ffffff;
 }
 
 .add-links {
-  height: 175px;
+  height: 150px;
   padding-top: 45px;
   box-sizing: border-box;
 
@@ -1086,18 +1090,14 @@ body {
 }
 
 .services {
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 65px;
+  margin-bottom: 85px;
 
   background-color: #f4f7f9;
 }
 
-/*.services-slider {
-  padding-bottom: 100px;
-}*/
-
 .services-desc {
-  padding-top: 64px;
+  padding-top: 69px;
   margin-bottom: 25px;
 }
 
@@ -1136,7 +1136,7 @@ body {
   float: left;
   width: 240px;
   margin-right: 80px;
-  padding-top: 50px;
+  padding-top: 45px;
 }
 
 .services-navigation::after {
@@ -1157,7 +1157,7 @@ body {
 
 .services-navigation .btn-slider-services {
   display: block;
-  padding: 20px;
+  padding: 11px 20px 19px;
 
   font-size: 21px;
   line-height: 30px;
@@ -1176,7 +1176,7 @@ body {
 }
 
 .services-content .services-slide{
-  min-height: 335px;
+  min-height: 325px;
 }
 
 .services-content .services-slide {
@@ -1203,13 +1203,14 @@ body {
 }
 
 .services-slide h3 {
-  padding-top: 45px;
-  padding-bottom: 25px;
+  padding-top: 44px;
+  padding-bottom: 35px;
 
   font-size: 36px;
   line-height: 24px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   color: #3d546e;
+  text-transform: uppercase;
 }
 
 .services-slide .content{
@@ -1235,21 +1236,21 @@ body {
 
 .services-content .services-slide:nth-child(1) {
   background: transparent url("../img/delivery slide.png") no-repeat;
-  background-position: top 77px right 0;
+  background-position: top 67px right 0;
 }
 
 .services-content .services-slide:nth-child(2) {
   background: transparent url("../img/guarantee slide.png") no-repeat;
-  background-position: top 77px right 0;
+  background-position: top 67px right 0;
 }
 
 .services-content .services-slide:nth-child(3) {
   background: transparent url("../img/credit slide.png") no-repeat;
-  background-position: top 77px right 0;
+  background-position: top 67px right 0;
 }
 
 .about-us {
-  margin-bottom: 87px;
+  margin-bottom: 84px;
 }
 
 .info {
@@ -1277,7 +1278,7 @@ body {
 
 .info p,
 .contacts p {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1290,7 +1291,7 @@ body {
 }
 
 .info .list-transport-companies {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
   padding: 0;
 
   list-style: none;
@@ -1324,7 +1325,7 @@ body {
 
 .contacts .contacts-desc {
   width: 180px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .contacts .btn-more-info {
@@ -1350,7 +1351,7 @@ body {
 }
 
 .footer-main-nav {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .footer-menu {
@@ -1372,8 +1373,8 @@ body {
 
 .footer-menu a {
   display: block;
-  margin-top: 30px;
-  padding: 5px 0 5px 50px;
+  margin-top: 33px;
+  padding: 5px 0 5px 60px;
   box-sizing: border-box;
 
   font-size: 18px;
@@ -1386,7 +1387,7 @@ body {
 
 .footer-menu.catalog-nav a {
   margin-top: 0;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 60px;
   color: #ffda96;
 }
 
@@ -1400,8 +1401,8 @@ body {
 
 .footer-contacts {
   float: left;
-  width: 320px;
-  margin-right: 40px;
+  width: 330px;
+  margin-right: 20px;
 
   font-size: 18px;
   line-height: 24px;
@@ -1423,7 +1424,7 @@ body {
 .copyrights {
   float: left;
   width: 230px;
-  margin-right: 150px;
+  margin-right: 160px;
 }
 
 .social {
@@ -1433,8 +1434,8 @@ body {
 .social .btn-social {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
   vertical-align: top;
 
   font-size: 0;
@@ -1456,7 +1457,7 @@ body {
   width: 20px;
   height: 12px;
 
-  top: 14px;
+  top: 15px;
   left: 10px;
 
   background: transparent url("../img/sprite.png") no-repeat center;
@@ -1478,8 +1479,8 @@ body {
   width: 17px;
   height: 17px;
 
-  top: 11px;
-  left: 11px;
+  top: 12px;
+  left: 12px;
 
   background: transparent url("../img/sprite.png") no-repeat center;
   background-position: -5px -469px;
@@ -1488,24 +1489,27 @@ body {
 .feedback {
   float: right;
   width: 140px;
-  margin-left: 20px;
 }
 
-.feedback:nth-child(2) {
-  padding-left: 30px;
-  box-sizing: border-box;
+.about-dev {
+  float: right;
+  width: 115px;
+  margin-left: 45px;
 }
 
-.feedback a {
+.feedback a,
+.about-dev a {
   color: #ffda96;
   text-decoration: none;
 }
 
-.feedback a:hover {
+.feedback a:hover,
+.about-dev a:hover {
   text-decoration: underline;
 }
 
-.feedback a:active {
+.feedback a:active,
+.about-dev a:active {
   color: #ee3643;
   text-decoration: none;
 }
@@ -1699,8 +1703,8 @@ div.footer-popup .btn-back {
 }
 
 .breadcrumbs {
-    padding: 10px 0;
-    margin: 15px 0 10px;
+    padding: 9px 0;
+    margin: 15px 0 5px;
 }
 
 .breadcrumbs ul {
@@ -1715,11 +1719,12 @@ div.footer-popup .btn-back {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding-left: 5px;
-  padding-right: 25px;
 }
 
 .breadcrumbs a {
+  padding-left: 15px;
+  padding-right: 25px;
+
   font-size: 13px;
   line-height: 18px;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -1730,7 +1735,8 @@ div.footer-popup .btn-back {
 
 .breadcrumbs .home {
   display: block;
-  margin-top: 3px;
+  margin-top: 2px;
+  padding-left: 0;
   width: 15px;
   height: 12px;
 
@@ -1744,8 +1750,8 @@ div.footer-popup .btn-back {
   width: 8px;
   height: 12px;
 
-  top: 3px;
-  right: 5px;
+  top: 2px;
+  right: 0;
   background: transparent url("../img/icon-right-small.png") no-repeat;
 }
 
@@ -1777,7 +1783,7 @@ div.footer-popup .btn-back {
 }
 
 .section-header {
-  padding: 11px 18px;
+  padding: 12px 18px 5px;
 
   background-color: #f7f3ec;
 }
@@ -1794,6 +1800,7 @@ div.footer-popup .btn-back {
 }
 
 .catalog-filters .section-header {
+  padding-bottom: 8px;
   margin-bottom: 5px;
 }
 
@@ -1809,7 +1816,7 @@ div.footer-popup .btn-back {
 }
 
 .catalog-filters legend {
-  padding: 0;
+  padding: 10px 0 0;
   margin-bottom: 10px;
 
   font-size: 17px;
@@ -1913,7 +1920,7 @@ div.footer-popup .btn-back {
 
 .catalog-filters .filter-firm legend,
 .catalog-filters .filter-power legend {
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .catalog-filters input[type="checkbox"],
@@ -2000,7 +2007,7 @@ input[type="radio"]:checked + label:hover::before {
 }
 
 .catalog-filters .filter-power {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 .catalog-filters button {
@@ -2021,8 +2028,8 @@ input[type="radio"]:checked + label:hover::before {
 
 .catalog .section-header h2{
   float: left;
-  width: 129px;
-  margin: 0 100px 0 0;
+  width: 130px;
+  margin: 0 90px 0 0;
 }
 
 .section-header ul {
@@ -2035,12 +2042,12 @@ input[type="radio"]:checked + label:hover::before {
 
 .sorting {
   float: left;
-  width: 380px;
+  width: 400px;
 }
 
 .additional-sorting {
   float: right;
-  width: 50px;
+  width: 40px;
 }
 
 .section-header li {
