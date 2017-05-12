@@ -2240,7 +2240,7 @@ input[type="radio"]:checked + label:hover::before {
 .popup.map-large {
   width: 940px;
   height: 445px;
-  display: block;
+  display: none;
 
   background-color: #eeeae3;
   background-image:
