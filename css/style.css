@@ -2230,3 +2230,9 @@ input[type="radio"]:checked + label:hover::before {
   color: rgba(0, 0, 0, 1);
   font-weight: normal;
 }
+/*Для IE 10*/
+.product-img img,
+.product-logo-img img,
+.map img {
+  border: none;
+}
