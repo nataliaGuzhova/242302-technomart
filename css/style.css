@@ -5,13 +5,13 @@ body {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
 .info h2 {
   font-size: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .page-header-top {
@@ -42,7 +42,7 @@ body {
 
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -79,7 +79,7 @@ body {
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -117,7 +117,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
   vertical-align: top;
@@ -130,7 +130,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -139,7 +139,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -177,7 +177,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: normal;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -213,7 +213,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   line-height: normal;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-decoration: none;
 }
@@ -311,7 +311,7 @@ body {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ff5357;
 }
 
@@ -329,7 +329,7 @@ body {
 
   font-size: 21px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #fb463c;
 
   border: solid 3px #ffffff;
@@ -356,7 +356,7 @@ body {
 
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #3d546e;
   text-align: center;
 }
@@ -376,7 +376,7 @@ body {
 
   font-size: 21px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
   text-align: center;
   text-decoration: none;
@@ -429,7 +429,7 @@ body {
   top: 13px;
   left: 15px;
 
-  background: transparent url("../img/sprite.png") no-repeat;;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -787px;
 }
 
@@ -450,7 +450,7 @@ body {
   top: 15px;
   right: 11px;
 
-  background: transparent url("../img/sprite.png") no-repeat;;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -600px;
 }
 
@@ -516,7 +516,7 @@ body {
   padding-right: 5px;
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
 
   text-decoration: underline;
@@ -583,7 +583,7 @@ body {
 
   font-size: 17px;
   line-height: 17px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
@@ -615,7 +615,7 @@ body {
 
   font-size: 24px;
   line-height: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 .features-item p {
@@ -633,7 +633,7 @@ body {
 
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -840,7 +840,7 @@ body {
 
   font-size: 36px;
   line-height: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -851,7 +851,7 @@ body {
   margin-top: 5px;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -904,7 +904,7 @@ body {
 
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #3d546e;
   font-weight: normal;
   text-transform: uppercase;
@@ -961,7 +961,7 @@ body {
 
   font-size: 18px;
   line-height: 20px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
 }
@@ -971,7 +971,7 @@ body {
 
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-decoration: line-through;
   text-transform: uppercase;
@@ -988,7 +988,7 @@ body {
 
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   color: #ffffff;
 
@@ -1177,7 +1177,7 @@ body {
 
   font-size: 30px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   color: #000000;
@@ -1188,7 +1188,7 @@ body {
 
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1222,7 +1222,7 @@ body {
 
   font-size: 21px;
   line-height: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: bold;
   color: #ffffff;
   background-color: #3d546e;
@@ -1273,7 +1273,7 @@ body {
 
   font-size: 36px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #3d546e;
   font-weight: normal;
   text-transform: uppercase;
@@ -1284,7 +1284,7 @@ body {
 
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1337,7 +1337,7 @@ body {
 
   font-size: 30px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
   font-weight: normal;
   text-transform: uppercase;
@@ -1349,7 +1349,7 @@ body {
 
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1365,7 +1365,7 @@ body {
 
   font-size: 18px;
   line-height: 20px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .list-transport-companies li {
@@ -1449,7 +1449,7 @@ body {
 
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-decoration: none;
   color: #ffffff;
   text-align: right;
@@ -1479,7 +1479,7 @@ body {
 
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1488,7 +1488,7 @@ body {
 
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: #33445b;
@@ -1671,7 +1671,7 @@ body {
 .message {
   font-size: 18px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   color: #000000;
 }
@@ -1696,7 +1696,7 @@ body {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #a9a9a9;
 
   background-color: #ffffff;
@@ -1708,7 +1708,7 @@ body {
 .form-content textarea::-webkit-input-placeholder {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: rgba(169, 169, 169, 1);
 }
 
@@ -1716,7 +1716,7 @@ body {
 .form-content textarea::-moz-placeholder {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: rgba(169, 169, 169, 1);
   opacity: 1;
 }
@@ -1743,7 +1743,7 @@ body {
 
   font-size: 30px;
   line-height: 18px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1815,7 +1815,7 @@ div.footer-popup .btn-back {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -1849,7 +1849,7 @@ div.footer-popup .btn-back {
 
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
   font-weight: normal;
@@ -1881,7 +1881,7 @@ div.footer-popup .btn-back {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
@@ -1909,7 +1909,7 @@ div.footer-popup .btn-back {
 
   font-size: 17px;
   line-height: 30px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   font-weight: bold;
@@ -1988,7 +1988,7 @@ div.footer-popup .btn-back {
 
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   color: #000000;
   background-color: #f7f3ec;
@@ -2005,7 +2005,7 @@ div.footer-popup .btn-back {
 
   font-size: 16px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-align: center;
 }
@@ -2028,7 +2028,7 @@ div.footer-popup .btn-back {
 
   font-size: 15px;
   line-height: 20px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -2111,7 +2111,7 @@ input[type="radio"]:checked + label:hover::before {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -2155,7 +2155,7 @@ input[type="radio"]:checked + label:hover::before {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   font-weight: normal;
@@ -2249,7 +2249,7 @@ input[type="radio"]:checked + label:hover::before {
 
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   font-weight: normal;
@@ -2296,7 +2296,7 @@ input[type="radio"]:checked + label:hover::before {
 
   font-size: 30px;
   line-height: 24px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   font-weight: normal;
@@ -2305,7 +2305,7 @@ input[type="radio"]:checked + label:hover::before {
 .about-perforators p {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 1);
   font-weight: normal;
 }
