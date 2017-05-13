@@ -609,6 +609,7 @@ body {
   width: 300px;
   height: 123px;
   margin-bottom: 20px;
+  margin-right: 20px;
   padding: 20px 23px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -618,6 +619,7 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
+
 .features-item p {
   margin: 0;
   margin-bottom: 13px;
@@ -651,23 +653,11 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.container-row:first-child .features-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.container-row:first-child .features-item:nth-child(3) {
-  float: right;
-}
-
-.container-row:last-child .features-item:last-child {
-  margin-bottom: 0;
-}
-
-.container-row:first-child .features-item:first-child {
+.features-item.materials {
   background: #f6b22d;
 }
 
-.container-row:first-child .features-item:first-child::before {
+.features-item.materials::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -680,11 +670,11 @@ body {
   background-position: -5px -865px;
 }
 
-.container-row:first-child .features-item:nth-child(2) {
+.features-item.tools {
   background: #3bbce3;
 }
 
-.container-row:first-child .features-item:nth-child(2)::before {
+.features-item.tools::before {
   content: "";
   position: absolute;
   top: 33px;
@@ -696,12 +686,12 @@ body {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -1012px;
 }
-
-.container-row:first-child .features-item:nth-child(3) {
+.features-item.tech {
+  margin-right: 0;
   background: #dc91d8;
 }
 
-.container-row:first-child .features-item:nth-child(3)::before {
+.features-item.tech::before {
   content: "";
   position: absolute;
   top: 30px;
@@ -713,12 +703,13 @@ body {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -940px;
 }
-/*чтото тут кривое с псевдоклассами*/
-.container-row:last-child .features-item:nth-child(2) {
+
+.features-item.discount {
+  margin-right: 0;
   background: #8ed78f;
 }
 
-.container-row:last-child .features-item:nth-child(2)::before {
+.features-item.discount::before {
   content: "";
   position: absolute;
   top: 26px;
@@ -731,11 +722,13 @@ body {
   background-position: -5px -78px;
 }
 
-.container-row:last-child .features-item:last-child {
+.features-item.delivery {
+  margin-right: 0;
+  margin-bottom: 0;
   background: #ffc047;
 }
 
-.container-row:last-child .features-item:last-child::before {
+.features-item.delivery::before {
   content: "";
   position: absolute;
   top: 32px;
@@ -919,6 +912,7 @@ body {
   display: inline-block;
   width: 220px;
   margin-right: 20px;
+  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   vertical-align: top;
@@ -937,10 +931,6 @@ body {
 .catalog-content,
 .mini-catalog-content {
   font-size: 0;
-}
-
-.catalog-content .catalog-item {
-  margin-bottom: 20px;
 }
 
 .catalog-item .product-img {
@@ -1430,6 +1420,8 @@ body {
 
 .footer-menu {
   float: right;
+  padding: 0;
+  margin-left: 20px;
 
   font-size: 0;
 }
@@ -1448,7 +1440,7 @@ body {
 .footer-menu a {
   display: block;
   margin-top: 33px;
-  padding: 5px 0 5px 60px;
+  padding: 5px 0 5px 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1460,9 +1452,14 @@ body {
   text-align: right;
 }
 
+.footer-main-nav .footer-menu {
+  width: 590px;
+}
+
 .footer-menu.catalog-nav a {
   margin-top: 0;
-  padding: 0 0 0 60px;
+  margin-left: 61px;
+  padding: 0;
   color: #ffda96;
 }
 
@@ -1477,7 +1474,6 @@ body {
 .footer-contacts {
   float: left;
   width: 330px;
-  margin-right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 4px;
@@ -1486,6 +1482,10 @@ body {
   line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
+}
+
+.catalog-nav {
+  width: 590px;
 }
 
 .page-footer-bottom {
@@ -1507,6 +1507,8 @@ body {
 
 .social {
   float: left;
+  width: 140px;
+  text-align: center;
 }
 
 .social .btn-social {
@@ -1595,7 +1597,7 @@ body {
 .popup {
   position: fixed;
   width: 620px;
-  display: none;
+  /*display: none;*/
   top: 50%;
   left: 50%;
 
@@ -1778,7 +1780,7 @@ body {
   background-position: -5px -212px;
 }
 
-div.footer-popup .btn {
+.footer-popup.cart-ok .btn {
   display: inline-block;
   width: 220px;
   margin-right: 20px;
@@ -1787,11 +1789,11 @@ div.footer-popup .btn {
   vertical-align: top;
 }
 
-div.footer-popup .btn:last-child {
+.footer-popup.cart-ok .btn:last-child {
   margin-right: 0;
 }
 
-div.footer-popup .btn-back {
+.footer-popup.cart-ok .btn-back {
   color: #000000;
   background-color: #ffffff;
 }
