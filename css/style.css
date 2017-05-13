@@ -103,13 +103,14 @@ body {
   float: left;
   position: relative;
   width: 270px;
+
+  font-size: 0;
 }
 
 .input-search {
-  position: absolute;
   display: inline-block;
-  width: 100%;
-  padding: 12px 5px 12px 49px;
+  width: 270px;
+  padding: 13px 5px 11px 49px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -119,19 +120,13 @@ body {
   font-family: 'Cuprum', 'Arial', sans-serif;
   color: #ffffff;
 
+  vertical-align: top;
   background-color: #33445a;
   border: none;
 }
 
-.input-search:hover {
-  background-color: #212a3a;
-}
-
-.search label {
-  position: absolute;
-  top: 13px;
-  padding-left: 49px;
-
+.input-search::-webkit-input-placeholder,
+.input-search::-webkit-input-placeholder {
   font-size: 17px;
   font-weight: normal;
   line-height: 18px;
@@ -139,11 +134,28 @@ body {
   color: #ffffff;
 }
 
+.input-search::-moz-placeholder,
+.input-search::-moz-placeholder {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+.search label {
+  position: relative;
+  display: inline-block;
+
+  font-size: 0;
+  vertical-align: top;
+}
+
 .search label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 17px;
+  top: 13px;
+  left: -250px;
 
   width: 17px;
   height: 17px;
@@ -151,6 +163,10 @@ body {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -733px;
   opacity: 0.3;
+}
+
+.input-search:hover {
+  background-color: #212a3a;
 }
 
 .input-search:hover+label::before {
@@ -169,12 +185,10 @@ body {
   outline: none;
 }
 
-.input-search:focus+label {
-  font-size: 0;
-}
 
 .input-search:focus + label::before {
   z-index: 1;
+
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -760px;
   opacity: 1;
@@ -1577,9 +1591,9 @@ body {
   position: fixed;
   width: 620px;
   display: none;
-  /*??*/
   top: 50%;
   left: 50%;
+
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-box-sizing: border-box;
