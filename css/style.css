@@ -113,6 +113,7 @@ body {
   padding: 13px 5px 11px 49px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   font-size: 17px;
   font-weight: normal;
@@ -120,7 +121,6 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
-  vertical-align: top;
   background-color: #33445a;
   border: none;
 }
@@ -146,9 +146,9 @@ body {
 .search label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 
   font-size: 0;
-  vertical-align: top;
 }
 
 .search label::before {
@@ -204,11 +204,11 @@ body {
 .cart,
 .checkout {
   display: inline-block;
-  vertical-align: top;
   width: 150px;
   padding: 12px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   font-size: 17px;
   font-weight: normal;
@@ -373,6 +373,7 @@ body {
   padding: 14px 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   font-size: 21px;
   line-height: 18px;
@@ -381,7 +382,6 @@ body {
   text-align: center;
   text-decoration: none;
 
-  vertical-align: top;
   background-color: #ffffff;
 }
 
@@ -570,7 +570,7 @@ body {
 
 .main-menu li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 
   font-size: 17px;
 }
@@ -813,7 +813,6 @@ body {
   margin: 0 5px 0 0;
   width: 10px;
   height: 10px;
-
   vertical-align: top;
 
   background-color: #ffffff;
@@ -918,14 +917,15 @@ body {
 .catalog-item {
   position: relative;
   display: inline-block;
-  vertical-align: top;
   width: 220px;
   margin-right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   font-size: 18px;
   text-align: center;
+
   border: 1px solid #eaeaea;
 }
 
@@ -958,6 +958,7 @@ body {
   display: inline-block;
   width: 160px;
   margin: 0 0 11px 0;
+  vertical-align: top;
 
   font-size: 18px;
   line-height: 20px;
@@ -985,6 +986,7 @@ body {
   padding: 11px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   font-size: 17px;
   line-height: 18px;
@@ -1128,13 +1130,13 @@ body {
 
 .product-logo-img {
   display: inline-block;
-  vertical-align: top;
   width: 220px;
   height: 145px;
   margin-right: 20px;
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   border: 1px solid #eaeaea;
 }
@@ -1437,7 +1439,7 @@ body {
 
 .footer-menu li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .footer-menu a {
@@ -1779,6 +1781,7 @@ div.footer-popup .btn {
   margin-right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 }
 
 div.footer-popup .btn:last-child {
@@ -1954,6 +1957,7 @@ div.footer-popup .btn-back {
   height: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
 
   background-color: #ababab;
   border: 8px solid #ffffff;
@@ -1985,12 +1989,14 @@ div.footer-popup .btn-back {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: baseline;
 
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   color: #000000;
+
   background-color: #f7f3ec;
   border: none;
   border-radius: 2px;
@@ -2002,6 +2008,7 @@ div.footer-popup .btn-back {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: baseline;
 
   font-size: 16px;
   line-height: 18px;
@@ -2144,6 +2151,7 @@ input[type="radio"]:checked + label:hover::before {
 
 .section-header li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .section-header .sorting a {
@@ -2190,6 +2198,7 @@ input[type="radio"]:checked + label:hover::before {
 .additional-sorting a::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
 
   border: 10px solid rgba(0, 0, 0, 0.3);
   border-right-width: 5px;
@@ -2237,7 +2246,7 @@ input[type="radio"]:checked + label:hover::before {
 
 .pagination li{
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .btn-pagination {
