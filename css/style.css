@@ -336,7 +336,7 @@ body {
 
 .contacts .address {
   display: block;
-  padding: 6px 5px 0 1px;
+  padding: 5px 5px 0 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -367,21 +367,8 @@ body {
   text-align: center;
   text-decoration: none;
 
+  vertical-align: top;
   background-color: #ffffff;
-}
-
-.btn-user-block:hover {
-  color: #ee3643;
-}
-
-.btn-user-block.login:hover::before {
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -5px -573px;
-}
-
-.btn-user-block:active {
-  color: #000000;
-  opacity: 0.3;
 }
 
 .btn-user-block.login {
@@ -414,9 +401,9 @@ body {
 
 .btn-user-block.user-name {
   position: relative;
-  width: 300px;
+  width: 240px;
   padding-left: 40px;
-  padding-right: 60px;
+  padding-right: 5px;
 }
 
 .btn-user-block.user-name::before {
@@ -432,7 +419,15 @@ body {
   background-position: -5px -787px;
 }
 
-.btn-user-block.user-name::after {
+.btn-user-block.logout {
+  position: relative;
+  width: 60px;
+  padding-left: 30px;
+  margin-left: -5px;
+  font-size: 0;
+}
+
+.btn-user-block.logout::before {
   position: absolute;
   content: "";
   width: 21px;
@@ -444,6 +439,24 @@ body {
   background: transparent url("../img/sprite.png") no-repeat;;
   background-position: -5px -600px;
 }
+
+.btn-user-block:hover {
+  color: #ee3643;
+}
+
+.btn-user-block:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-user-block.login:hover::before {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -5px -573px;
+}
+
+.btn-user-block.logout:hover::before {
+  background-position: -5px -627px;
+}
+
 .btn-user-block.user-name:hover {
   color: #000000;
 }
@@ -452,15 +465,15 @@ body {
   background-position: -5px -815px;
 }
 
-.btn-user-block.user-name:hover::after {
-  background-position: -5px -627px;
+.btn-user-block.login:active::before,
+.btn-user-block.user-name:active::before,
+.btn-user-block.logout:active::before {
+  opacity: 0.3;
 }
 
-.btn-user-block.user-name:active::before,
-.btn-user-block.user-name:active::after,
+
 .btn-user-block.user-name:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-nav {
