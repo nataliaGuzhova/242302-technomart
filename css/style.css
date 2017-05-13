@@ -1144,6 +1144,9 @@ body {
 .product-logo-img:active {
   -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
           box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+.product-logo-img:active img {
   opacity: 0.3;
 }
 
